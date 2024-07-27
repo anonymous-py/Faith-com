@@ -1,0 +1,70 @@
+body{
+display:flex;
+justify-content:center;
+}
+
+form{
+border:1px solid #333;
+border-radius:12px;
+margin:50px;
+padding:60px;
+font-size:20px;
+font-family:sans-serif;
+width:230px;
+position:absolute;
+
+}
+
+form input{
+margin-bottom:30px;
+border:1px solid dodgerblue;
+border-radius:10px;
+padding:6px 6px 6px 20px;
+font-size:15px;
+}
+
+button{
+border:1px solid grey;
+border-radius:12px;
+padding:12px;
+background-color:dodgerblue;
+color:white;
+margin-left:55px;
+}
+
+button:focus{
+background-color:green;
+}
+
+
+.flash-info {
+    background-color: #d9edf7;
+    color: #31708f;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.flash-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.flash-warning {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.flash-danger {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'register.css')}}" type="text/css">
+</head>
+<body>
+
+<form action="{{url_for('auth.register')}}" method="post" enctype="multipart/form-data">
+    <label for="first_name">First Name</label><br>
+    <input type="text" id="first_name" name="first_name"><br>
+
+    <label for="last_name">Last Name</label><br>
+    <input type="text" id="last_name" name="last_name"><br>
+
+
+    <label for="username">username</label><br>
+    <input type="text" id="username" name="username"><br>
+
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email"><br>
+
+
+    <label for="password">Password</label><br>
+    <input type="password" id="password" name="password"><br>
+
+
+    <label for="confirm_password">Confirm Password</label><br>
+    <input type="password" id="confirm_password" name="confirm_password"><br>
+
+    <button type="submit">Sign up</button>
+
+
+</form>
+
+</body>
+</html>

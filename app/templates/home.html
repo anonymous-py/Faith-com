@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'home.css')}}" type="text/css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li class="left-nav"><a href="#">blah</a></li>
+
+
+        <li class="center-nav"><a href="#">blah</a></li>
+        <li class="center-nav"><a href="#">blah</a></li>
+        <li class="center-nav"><a href="#">blah</a></li>
+        <li class="center-nav"><a href="#">blah</a></li>
+        <li class="center-nav"><a href="#">blah</a></li>
+
+        <li class="right-nav"><a href="#">blah</a></li>
+        <li class="right-nav"><a href="#">blah</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    {%with messages = get_flashed_messages(with_categories = true)%}
+    {%if messages%}
+
+    <div class="alert-container">
+        {% for category , message in messages%}
+
+        <div class="flash-{{category}}">
+            {{message}}
+        </div>
+        {%endfor%}
+    </div>
+    {%endif%}
+    {%endwith%}
+
+</div>
+
+
+</body>
+</html>
